@@ -1,2 +1,6 @@
 # Zreact
 从0实现的React18
+
+
+pnpm-workspace.yaml
+pnpm-workspace.yaml 定义了 工作空间 的根目录，并能够使您从工作空间中包含 / 排除目录 。 默认情况下，包含所有子目录。
