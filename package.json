@@ -1,26 +1,32 @@
 {
-  "name": "Zreact",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
-    "commitlint": "^18.4.3",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.2",
-    "husky": "^8.0.3",
-    "prettier": "^3.1.1",
-    "rollup": "^4.9.1",
-    "typescript": "^5.3.3"
-  }
+	"name": "Zreact",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages",
+		"build:dev": "rimraf dist && rollup --bundleConfigAsCjs --config ./scripts/rollup/react.config.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"@rollup/plugin-commonjs": "^25.0.7",
+		"@rollup/plugin-replace": "^5.0.5",
+		"@typescript-eslint/eslint-plugin": "^6.16.0",
+		"@typescript-eslint/parser": "^6.16.0",
+		"commitlint": "^18.4.3",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.2",
+		"husky": "^8.0.3",
+		"prettier": "^3.1.1",
+		"rimraf": "^5.0.5",
+		"rollup": "^4.9.1",
+		"rollup-plugin-generate-package-json": "^3.2.0",
+		"rollup-plugin-typescript2": "^0.36.0",
+		"typescript": "^5.3.3"
+	}
 }
